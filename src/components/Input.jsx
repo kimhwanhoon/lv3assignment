@@ -15,6 +15,7 @@ const onChangeHandler = (e, setFn) => {
   }
 };
 const onClickHandler = (nameVal, priceVal) => {
+  priceVal = priceVal || '0';
   const filteredPriceValue = priceVal.replaceAll(',', '');
   const result = {
     name: nameVal,
